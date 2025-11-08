@@ -44,27 +44,7 @@ Copy code
 python -m venv env
 # Activate on Windows:
 env\Scripts\activate
-# Activate on Linux/macOS:
-source env/bin/activate
-Install dependencies from requirements.txt:
 
-bash
-Copy code
-pip install -r requirements.txt
-Running the Application
-Start the Flask development server:
-
-bash
-Copy code
-flask run
-Or, if your main app file is app.py, run:
-
-bash
-Copy code
-python app.py
-Open your browser and visit:
-
-http://localhost:5000/ — Main landing page and login
 
 Application Workflow
 Registration
