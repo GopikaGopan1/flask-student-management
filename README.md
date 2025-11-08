@@ -15,7 +15,7 @@ This project demonstrates fundamental Flask concepts such as routing, template r
 
 ## Features
 
-- **Separate Registration & Login** for Teachers and Students.
+- **Registration & Login** for Teachers and Students.
 - **Admin Approval Panel** to review and approve or reject new registrations.
 - **Mutual Visibility** where approved Teachers and Students can view each other's profiles.
 - **Role-Based Access Control** to restrict pages and actions based on user type and approval status.
