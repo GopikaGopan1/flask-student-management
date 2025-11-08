@@ -6,9 +6,10 @@ app.secret_key='abadf'
 
 
 
-@app.route("/home")
+@app.route('/')
 def home():
-    return render_template("home.html")
+    return redirect('/adminhome')
+
 
 @app.route("/reg")
 def sreg():
