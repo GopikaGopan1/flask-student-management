@@ -24,7 +24,8 @@ This project demonstrates fundamental Flask concepts such as routing, template r
 
 
 Admin Credentials :
+
 Username: admin
 Password: admin
 
-Security Notice: Change the admin credentials in production to secure your application.
+
