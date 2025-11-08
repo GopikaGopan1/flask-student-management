@@ -22,49 +22,6 @@ This project demonstrates fundamental Flask concepts such as routing, template r
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Flask (installable via pip)
-- Recommended: virtual environment (venv)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone <your-repository-url>
-   cd <repository-folder>
-Create and activate a virtual environment (recommended):
-
-bash
-Copy code
-python -m venv env
-# Activate on Windows:
-env\Scripts\activate
-
-
-Application Workflow
-Registration
-Teachers and Students can register via separate forms.
-
-New accounts are marked pending until approved by Admin.
-
-Admin Panel
-Admin logs in with predefined credentials.
-
-Views all pending registrations (Teachers and Students).
-
-Can approve or reject accounts.
-
-Approved users gain access to dashboards.
-
-Approved User Interaction
-Approved Students can view a list of approved Teachers.
-
-Approved Teachers can view a list of approved Students.
 
 Admin Credentials :
 Username: admin
