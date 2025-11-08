@@ -1,0 +1,12 @@
+import sqlite3
+con = sqlite3.connect('mydatabase.db', check_same_thread=False)
+# con.execute('create table login(loginid integer primary key autoincrement,username text not null UNIQUE,password password not null,usertype text not null,status text default 0)')
+# print('login table is created')
+# con.execute('create table Teacher(tid integer primary key autoincrement,firstname text not null,lastname text not null,age integer,email text not null,phone integer not null,status text default 0,loginid ForeignKey)')
+# print('teacher table created')
+# con.execute('create table student(sid integer primary key autoincrement,firstname text not null,lastname text not null,age integer,email text not null,phone integer not null,status text default 0,loginid ForeignKey)')
+# print('student table created')
+# con.execute('drop table login')
+# con.execute('drop table teacher')
+# con.execute('drop table student')
+# con.close()

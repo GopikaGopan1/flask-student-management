@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+
+  <form action="/save" method="post" class="bg-white p-4 rounded shadow-sm" style="max-width: 400px; width: 100%;">
+    <h2 class="mb-4 text-center">Register</h2>
+    <!-- ----- dropdown-- -->
+    <div class="mb-3">
+      <label for="regs" class="form-label">User Type</label>
+      <select name="usertype" id="regs" class="form-select">
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <input type="text" name="firstname" placeholder="Enter first name" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" name="lastname" placeholder="Enter last name" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="email" name="email" placeholder="Enter email"  class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="number" name="age"  placeholder="Enter age"  class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="number" name="phonenumber" placeholder="Enter phone number" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" name="username" placeholder="Enter username" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="password" name="password"  placeholder="Enter password" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+     <!-- ----- flash message to show error msgs --- -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-warning " role="alert">
+        {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
+  </form>
+ 
+</body>
+</html>
+
+<!-- ------ real code (for reference) ------ -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form action="/save" method="post">
+        <select name="usertype" id="regs">
+        <option value="teacher">teacher</option>
+        <option value="student">student</option>
+    </select> 
+        <input type="text" name="firstname" id="" placeholder="Enter first name"><br>
+        <input type="text" name="lastname" id="" placeholder="Enter last name"><br>
+        <input type="email" name="email" id="" placeholder="Enter email"><br>
+        <input type="number" name="age" id="" placeholder="Enter age"><br>
+        <input type="number" name="phonenumber" id="" placeholder="Enter phone number"><br>
+        <input type="text" name="username" id="" placeholder="Enter username"><br>
+        <input type="text" name="password" id="" placeholder="Enter password"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
